@@ -1,0 +1,15 @@
+{
+  "name": "notification-exp",
+  "version": "1.0.0",
+  "description": "Server for notification service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/node-notification-exp.git"
+  },
+  "author": "Duc",
+  "license": "ISC"
+}
