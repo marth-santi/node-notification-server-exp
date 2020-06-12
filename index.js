@@ -12,7 +12,7 @@ app.get('/api', (req, res) => {
   res.end('Hello');
 });
 
-http.createServer(app).listen(80);
+http.createServer(app).listen(PORT);
 https.createServer(app).listen(PORT, () => {
   console.log('Listening');
 });
