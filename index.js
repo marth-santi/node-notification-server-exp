@@ -12,4 +12,6 @@ app.get('/api', (req, res) => {
 });
 
 http.createServer(app).listen(80);
-https.createServer(app).listen(443);
+https.createServer(app).listen(443, () => {
+  console.log('Listening');
+});
