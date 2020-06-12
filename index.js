@@ -13,6 +13,6 @@ app.get('/api', (req, res) => {
   res.end('Hello');
 });
 
-http.createServer(app).listen(PORT, () => {
+app.listen(PORT, () => {
   console.log('Listening');
 });
