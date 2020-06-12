@@ -1,4 +1,6 @@
 const express = require('express');
+const https = require('https');
+const http = require('http');
 const app = express();
 
 app.use((req, res, next) => {
@@ -9,6 +11,5 @@ app.get('/api', (req, res) => {
   res.end('Hello');
 });
 
-app.listen(80, () => {
-  console.log('Listening at 8980');
-});
+http.createServer(app).listen(80);
+https.createServer(app).listen(443);
