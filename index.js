@@ -8,7 +8,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.end('/api/* to this server function ');
+  res.end('/api/* to this server function with port ' + PORT);
 });
 
 app.get('/api', (req, res) => {
@@ -16,5 +16,5 @@ app.get('/api', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log('Listening');
+  console.log('Listening' + PORT);
 });
