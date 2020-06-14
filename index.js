@@ -8,7 +8,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.end('/api/* to this server function with port ' + PORT);
+  res.end('/api/* to this server function with testKey: ' + process.env.TestKey);
 });
 
 app.get('/api', (req, res) => {
