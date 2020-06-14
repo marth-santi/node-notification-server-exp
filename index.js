@@ -15,6 +15,8 @@ app.get('/api', (req, res) => {
   res.end('Hello world');
 });
 
+app.get('api/createdb', (req, res) => {});
+
 app.listen(PORT, () => {
   console.log('Listening' + PORT);
 });
